@@ -103,6 +103,7 @@ class ContactForm extends Component {
   render() {
 
     return (
+      <>
       <body>
         <GlobalStyle />
         <StyledFormWrapper id="backUp">
@@ -137,7 +138,9 @@ class ContactForm extends Component {
             <StyledButton type="submit">Send Message</StyledButton>
           </StyledForm>
         </StyledFormWrapper>
-        <ButtonSet id="goHere">
+
+      </body>
+      <div className="buttonSet" id="goHere">
           <Spring
           from= {{ opacity: 0 }}
           to={{opacity: 1}}
@@ -147,14 +150,14 @@ class ContactForm extends Component {
               <div style={props}>
                 <a href="https://www.linkedin.com/in/potentia-robotics-790582204/" target="_blank" className="fa fa-linkedin"></a>
                 <a href="https://www.youtube.com/channel/UCKzWtwtWSejKt9THR_XlU7Q" target="_blank" className="fa fa-youtube"></a>
-                <a href="https://github.com/tjhrc" target="_blank" className="fa fa-github"></a>
+                <a href="https://github.com/PotentiaRobotics" target="_blank" className="fa fa-github"></a>
                 <a href="#" target="_blank" className="fa fa-instagram"></a>
                 <a href="https://www.facebook.com/potentiarobotics/" target="_blank" className="fa fa-facebook"></a>
               </div>
             )}
           </Spring>
-        </ButtonSet>
-      </body>
+        </div>
+      </>
   );
   }
 }
