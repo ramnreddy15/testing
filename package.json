@@ -46,8 +46,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+<<<<<<< HEAD
   },
   "devDependencies": {
     "react-spring": "^8.0.27"
+=======
+>>>>>>> fc49f60ceeabe456594af305b8130802a992deff
   }
 }

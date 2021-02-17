@@ -1,7 +1,10 @@
 import React, {Component} from "react";
 import emailjs from "emailjs-com";
 import {createGlobalStyle} from 'styled-components';
+<<<<<<< HEAD
 import {Spring} from 'react-spring/renderprops'
+=======
+>>>>>>> fc49f60ceeabe456594af305b8130802a992deff
 import {StyledFormWrapper, StyledForm, StyledButton, StyledError, StyledInput, StyledTextArea, StyledTextAreaSubject, ButtonSet} from "./assets/StyledContactForm.js";
 import './assets/contact.scss'
 
@@ -103,7 +106,11 @@ class ContactForm extends Component {
   render() {
 
     return (
+<<<<<<< HEAD
       <body>
+=======
+      <>
+>>>>>>> fc49f60ceeabe456594af305b8130802a992deff
         <GlobalStyle />
         <StyledFormWrapper id="backUp">
           <StyledForm onSubmit={this.handleSubmit}>
@@ -137,6 +144,7 @@ class ContactForm extends Component {
             <StyledButton type="submit">Send Message</StyledButton>
           </StyledForm>
         </StyledFormWrapper>
+<<<<<<< HEAD
         <ButtonSet id="goHere">
           <Spring
           from= {{ opacity: 0 }}
@@ -155,6 +163,23 @@ class ContactForm extends Component {
           </Spring>
         </ButtonSet>
       </body>
+=======
+        <button2 onClick={() => this.scrollDown("goHere")}>⤋ Or Find Us At ⤋</button2>
+        <ButtonSet id="goHere">
+          <a href="https://www.linkedin.com/in/potentia-robotics-790582204/" target="_blank" className="fa fa-linkedin"></a>
+          <span><br></br></span>
+          <a href="https://www.youtube.com/channel/UCKzWtwtWSejKt9THR_XlU7Q" target="_blank" className="fa fa-youtube"></a>
+          <span><br></br></span>
+          <a href="https://github.com/tjhrc" target="_blank" className="fa fa-github"></a>
+          <span><br></br></span>
+          <a href="#" target="_blank" className="fa fa-instagram"></a>
+          <span><br></br></span>
+          <a href="https://www.facebook.com/potentiarobotics/" target="_blank" className="fa fa-facebook"></a>
+          <span><br></br></span>
+          <button onClick={() => this.scrollDown("backUp")} className="fa fa-envelope"></button>
+        </ButtonSet>
+      </>
+>>>>>>> fc49f60ceeabe456594af305b8130802a992deff
   );
   }
 }
