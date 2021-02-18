@@ -13,12 +13,12 @@ const StyledFormWrapper = styled.div`
   justify-content: center;
   align-items: center;
   position:relative;
-  margin-top: 5vw;
+  margin-top: 4vw;
   padding: 0 2%;
 `;
 
 const StyledForm = styled.form`
-  width: 50%;
+  width: 70%;
   padding: 1.75%;
   background-color: #eee;
   color: #3d5a80;
